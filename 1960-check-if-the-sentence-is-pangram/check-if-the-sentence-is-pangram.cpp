@@ -9,7 +9,7 @@ public:
             seen[c - 'a'] = true;
         }
         for (int i = 0; i < 26; i++) {
-            if (!seen[i])
+            if (seen[i] == false)
                 return false;
         }
         return true;
